@@ -29,6 +29,10 @@ app.component('review-form', {
     },
     methods: {
         onSubmit() {
+            if (this.name === "" || this.review === "" || this.rating === null) {
+                alert("You must fill out all fields");
+                return;
+            }
             let productReview={
                 name: this.name,
                 review: this.review,
