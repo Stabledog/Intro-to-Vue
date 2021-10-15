@@ -37,7 +37,6 @@ app.component('product-display', {
             product: 'Socks',
             brand: 'Vue Mastery',
             selectedVariant: 0,
-            details: ['49% cotton', '30% wool', '20% polyester'],
             variants: [
                 { id: 2233, color: 'green', image: './assets/images/socks_green.jpg', quantity: 50 },
                 { id: 2234, color: 'blue', image: './assets/images/socks_blue.jpg', quantity: 0 },
