@@ -20,9 +20,7 @@ app.component('product-display', {
                     <p v-if="inStock">In Stock</p>
                     <p v-else>Out of Stock</p>
                     <p>{{ shipping }}</p>
-                    <ul>
-                        <li v-for="detail in details">{{ detail }}</li>
-                    </ul>
+                    <product-details></product-details>
 
                     <div v-for="(variant, index) in variants" :key="variant.id" @mouseover="updateVariant(index)"
                         class="color-circle" :style="{ backgroundColor: variant.color }">
