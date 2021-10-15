@@ -17,7 +17,7 @@
                 :premium="premium"
                 @add-to-cart="updateCart"
             ></product-display>
-            <review-form></review-form>
+            <review-form @review-submitted="addReview"></review-form>
         </div>
 
         <!-- Import App -->
