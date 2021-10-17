@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="./assets/styles.css" />
         <!-- Import Vue.js -->
         <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <div id="app">
             <div class="nav-bar"></div>
+            <axios-fiddle></axios-fiddle>
             <http-fetch></http-fetch>
             <div class="cart">Cart({{ cart.length }})</div>
             <product-display
@@ -29,6 +31,7 @@
         <script src="./components/ReviewList.js"></script>
         <script src="./components/ReviewForm.js"></script>
         <script src="./components/HttpFetch.js"></script>
+        <script src="./components/AxiosFiddle.js"></script>
 
         <!-- Mount App -->
         <script>
